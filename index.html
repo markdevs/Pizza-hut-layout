@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href=""><img src="logo-pizza-hut.png" alt=""></a>
+            <ul class="main_bar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="circle"></div>
+        <div class="content">
+            <div class="text">
+                <h1>It's not just pizza<br>It's <span>Pizza Hut</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo totam sapiente beatae! Eligendi, laudantium laborum fugit, velit at assumenda necessitatibus consequuntur dolores odio sapiente fuga ullam minus! Nobis, a explicabo? Laboriosam culpa facilis, amet animi accusamus maiores voluptate vero assumenda!</p>
+                <a href="#">learn more</a>
+            </div>
+            <div class="img_box">
+                <img src="./images/pizza1.png" class="hut">
+            </div>
+          
+                <ul class="thumb">
+                    <li><img src="./images/pizza1.png" onclick="imgSlider('./images/pizza1.png'); colorCircle('#CB1F3D')"></li>
+                    <li><img src="./images/pizza2.png" onclick="imgSlider('./images/pizza2.png'); colorCircle('#577590')"></li>
+                    <li><img src="./images/pizza3.png" onclick="imgSlider('./images/pizza3.png'); colorCircle('#f8961e')"></li>
+                    <li><img src="./images/pizza4.png" onclick="imgSlider('./images/pizza4.png'); colorCircle('#f9c74f')"></li>
+                    <li><img src="./images/pizza5.png" onclick="imgSlider('./images/pizza5.png'); colorCircle('#90be6d')"></li>
+                    <li><img src="./images/pizza6.png" onclick="imgSlider('./images/pizza6.png'); colorCircle('#43aa8b')"></li>
+                </ul>
+          
+                <ul class="sci">
+                    <li><a href=""><img src="./images/facebook.png" alt=""></a></li>
+                    <li><a href=""><img src="./images/instagram.png" alt=""></a></li>
+                    <li><a href=""><img src="./images/twitter.png" alt=""></a></li>
+                </ul>
+        
+        </div>
+    </section>
+    <script>
+        function imgSlider(anything) {
+            document.querySelector('.hut').src = anything;
+        }
+
+        function colorCircle(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
